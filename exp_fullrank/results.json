@@ -1,0 +1,506 @@
+{
+  "config": {
+    "model_name": "HuggingFaceTB/SmolLM2-360M",
+    "hidden_dim": 960,
+    "num_layers": 32,
+    "primary_layer": 18,
+    "ablation_layers": [
+      14,
+      18,
+      22,
+      26
+    ],
+    "seed": 42
+  },
+  "timestamp": "2026-02-01T04:47:41.184464",
+  "device": "cuda",
+  "use_real_data": false,
+  "data_sources": null,
+  "phase3_full_rank": {
+    "layers": [
+      14,
+      18,
+      22,
+      26
+    ],
+    "total_samples": 2500,
+    "layer_14_var_ratio": 0.008705772459506989,
+    "layer_18_var_ratio": 0.014395371079444885,
+    "layer_22_var_ratio": 0.0360029861330986,
+    "layer_26_var_ratio": 0.05047124624252319
+  },
+  "phase4_full_rank_layer18": {
+    "crosscoder": {
+      "tokens_to_convergence": 250000,
+      "final_loss": 0.278888463973999,
+      "dead_features": 0
+    },
+    "diff_sae_32x": {
+      "tokens_to_convergence": 250000,
+      "final_loss": 0.0005665028584189713,
+      "dead_features": 0,
+      "converged": false
+    },
+    "diff_sae_4x": {
+      "tokens_to_convergence": 250000,
+      "final_loss": 0.0013653264613822103,
+      "dead_features": 0,
+      "converged": false
+    },
+    "efficiency": {
+      "crosscoder_vs_diff_sae_32x": 0.9999999999999599,
+      "crosscoder_vs_diff_sae_4x": 0.9999999999999599
+    }
+  },
+  "phase5_full_rank_layer18": {
+    "crosscoder": {
+      "bis": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "fpr_benign": 0.0,
+      "best_feature": 0
+    },
+    "diff_sae_32x": {
+      "bis": 0.4000000059604645,
+      "ci": [
+        0.3759398465600091,
+        0.42784659558289123
+      ],
+      "precision": 1.0,
+      "recall": 0.25,
+      "fpr_benign": 0.0,
+      "best_feature": 164
+    },
+    "diff_sae_4x": {
+      "bis": 0.4000000059604645,
+      "ci": [
+        0.372262652958466,
+        0.42517006466489665
+      ],
+      "precision": 1.0,
+      "recall": 0.25,
+      "fpr_benign": 0.0,
+      "best_feature": 31
+    }
+  },
+  "phase4_full_rank_layer14": {
+    "crosscoder": {
+      "tokens_to_convergence": 250000,
+      "final_loss": 0.2185324728488922,
+      "dead_features": 0
+    },
+    "diff_sae_32x": {
+      "tokens_to_convergence": 250000,
+      "final_loss": 0.00032039545476436615,
+      "dead_features": 0,
+      "converged": false
+    },
+    "diff_sae_4x": {
+      "tokens_to_convergence": 250000,
+      "final_loss": 0.0006166424718685448,
+      "dead_features": 0,
+      "converged": false
+    },
+    "efficiency": {
+      "crosscoder_vs_diff_sae_32x": 0.9999999999999599,
+      "crosscoder_vs_diff_sae_4x": 0.9999999999999599
+    }
+  },
+  "phase5_full_rank_layer14": {
+    "crosscoder": {
+      "bis": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "fpr_benign": 0.0,
+      "best_feature": 0
+    },
+    "diff_sae_32x": {
+      "bis": 0.4000000059604645,
+      "ci": [
+        0.3744276522089365,
+        0.42576965587972043
+      ],
+      "precision": 1.0,
+      "recall": 0.25,
+      "fpr_benign": 0.0,
+      "best_feature": 0
+    },
+    "diff_sae_4x": {
+      "bis": 0.4000000059604645,
+      "ci": [
+        0.3765044167755376,
+        0.427734600299187
+      ],
+      "precision": 1.0,
+      "recall": 0.25,
+      "fpr_benign": 0.0,
+      "best_feature": 295
+    }
+  },
+  "phase4_full_rank_layer22": {
+    "crosscoder": {
+      "tokens_to_convergence": 250000,
+      "final_loss": 0.45663073658943176,
+      "dead_features": 0
+    },
+    "diff_sae_32x": {
+      "tokens_to_convergence": 250000,
+      "final_loss": 0.0021771721076220274,
+      "dead_features": 0,
+      "converged": false
+    },
+    "diff_sae_4x": {
+      "tokens_to_convergence": 250000,
+      "final_loss": 0.00403559347614646,
+      "dead_features": 0,
+      "converged": false
+    },
+    "efficiency": {
+      "crosscoder_vs_diff_sae_32x": 0.9999999999999599,
+      "crosscoder_vs_diff_sae_4x": 0.9999999999999599
+    }
+  },
+  "phase5_full_rank_layer22": {
+    "crosscoder": {
+      "bis": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "fpr_benign": 0.0,
+      "best_feature": 0
+    },
+    "diff_sae_32x": {
+      "bis": 0.4000000059604645,
+      "ci": [
+        0.3733883911965762,
+        0.42638160412739495
+      ],
+      "precision": 1.0,
+      "recall": 0.25,
+      "fpr_benign": 0.0,
+      "best_feature": 297
+    },
+    "diff_sae_4x": {
+      "bis": 0.4000000059604645,
+      "ci": [
+        0.37414954852277943,
+        0.42603442488707655
+      ],
+      "precision": 1.0,
+      "recall": 0.25,
+      "fpr_benign": 0.0,
+      "best_feature": 187
+    }
+  },
+  "phase4_full_rank_layer26": {
+    "crosscoder": {
+      "tokens_to_convergence": 250000,
+      "final_loss": 1.3717654943466187,
+      "dead_features": 0
+    },
+    "diff_sae_32x": {
+      "tokens_to_convergence": 250000,
+      "final_loss": 0.007810872979462147,
+      "dead_features": 0,
+      "converged": false
+    },
+    "diff_sae_4x": {
+      "tokens_to_convergence": 250000,
+      "final_loss": 0.011799581348896027,
+      "dead_features": 0,
+      "converged": false
+    },
+    "efficiency": {
+      "crosscoder_vs_diff_sae_32x": 0.9999999999999599,
+      "crosscoder_vs_diff_sae_4x": 0.9999999999999599
+    }
+  },
+  "phase5_full_rank_layer26": {
+    "crosscoder": {
+      "bis": 0.2348192036151886,
+      "ci": [
+        0.20011134165522154,
+        0.27162967687631034
+      ],
+      "precision": 0.6159999966621399,
+      "recall": 0.15399999916553497,
+      "fpr_benign": 0.04699999839067459,
+      "best_feature": 10206
+    },
+    "diff_sae_32x": {
+      "bis": 0.4000000059604645,
+      "ci": [
+        0.376712537739179,
+        0.4223970050335518
+      ],
+      "precision": 1.0,
+      "recall": 0.25,
+      "fpr_benign": 0.0,
+      "best_feature": 676
+    },
+    "diff_sae_4x": {
+      "bis": 0.4000000059604645,
+      "ci": [
+        0.3767757651619821,
+        0.42348151455109334
+      ],
+      "precision": 1.0,
+      "recall": 0.25,
+      "fpr_benign": 0.0,
+      "best_feature": 3294
+    }
+  },
+  "ablation_full_rank": {
+    "14": {
+      "training": {
+        "crosscoder": {
+          "tokens_to_convergence": 250000,
+          "final_loss": 0.2185324728488922,
+          "dead_features": 0
+        },
+        "diff_sae_32x": {
+          "tokens_to_convergence": 250000,
+          "final_loss": 0.00032039545476436615,
+          "dead_features": 0,
+          "converged": false
+        },
+        "diff_sae_4x": {
+          "tokens_to_convergence": 250000,
+          "final_loss": 0.0006166424718685448,
+          "dead_features": 0,
+          "converged": false
+        },
+        "efficiency": {
+          "crosscoder_vs_diff_sae_32x": 0.9999999999999599,
+          "crosscoder_vs_diff_sae_4x": 0.9999999999999599
+        }
+      },
+      "evaluation": {
+        "crosscoder": {
+          "bis": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr_benign": 0.0,
+          "best_feature": 0
+        },
+        "diff_sae_32x": {
+          "bis": 0.4000000059604645,
+          "ci": [
+            0.3744276522089365,
+            0.42576965587972043
+          ],
+          "precision": 1.0,
+          "recall": 0.25,
+          "fpr_benign": 0.0,
+          "best_feature": 0
+        },
+        "diff_sae_4x": {
+          "bis": 0.4000000059604645,
+          "ci": [
+            0.3765044167755376,
+            0.427734600299187
+          ],
+          "precision": 1.0,
+          "recall": 0.25,
+          "fpr_benign": 0.0,
+          "best_feature": 295
+        }
+      }
+    },
+    "18": {
+      "training": {
+        "crosscoder": {
+          "tokens_to_convergence": 250000,
+          "final_loss": 0.278888463973999,
+          "dead_features": 0
+        },
+        "diff_sae_32x": {
+          "tokens_to_convergence": 250000,
+          "final_loss": 0.0005665028584189713,
+          "dead_features": 0,
+          "converged": false
+        },
+        "diff_sae_4x": {
+          "tokens_to_convergence": 250000,
+          "final_loss": 0.0013653264613822103,
+          "dead_features": 0,
+          "converged": false
+        },
+        "efficiency": {
+          "crosscoder_vs_diff_sae_32x": 0.9999999999999599,
+          "crosscoder_vs_diff_sae_4x": 0.9999999999999599
+        }
+      },
+      "evaluation": {
+        "crosscoder": {
+          "bis": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr_benign": 0.0,
+          "best_feature": 0
+        },
+        "diff_sae_32x": {
+          "bis": 0.4000000059604645,
+          "ci": [
+            0.3759398465600091,
+            0.42784659558289123
+          ],
+          "precision": 1.0,
+          "recall": 0.25,
+          "fpr_benign": 0.0,
+          "best_feature": 164
+        },
+        "diff_sae_4x": {
+          "bis": 0.4000000059604645,
+          "ci": [
+            0.372262652958466,
+            0.42517006466489665
+          ],
+          "precision": 1.0,
+          "recall": 0.25,
+          "fpr_benign": 0.0,
+          "best_feature": 31
+        }
+      }
+    },
+    "22": {
+      "training": {
+        "crosscoder": {
+          "tokens_to_convergence": 250000,
+          "final_loss": 0.45663073658943176,
+          "dead_features": 0
+        },
+        "diff_sae_32x": {
+          "tokens_to_convergence": 250000,
+          "final_loss": 0.0021771721076220274,
+          "dead_features": 0,
+          "converged": false
+        },
+        "diff_sae_4x": {
+          "tokens_to_convergence": 250000,
+          "final_loss": 0.00403559347614646,
+          "dead_features": 0,
+          "converged": false
+        },
+        "efficiency": {
+          "crosscoder_vs_diff_sae_32x": 0.9999999999999599,
+          "crosscoder_vs_diff_sae_4x": 0.9999999999999599
+        }
+      },
+      "evaluation": {
+        "crosscoder": {
+          "bis": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "precision": 0.0,
+          "recall": 0.0,
+          "fpr_benign": 0.0,
+          "best_feature": 0
+        },
+        "diff_sae_32x": {
+          "bis": 0.4000000059604645,
+          "ci": [
+            0.3733883911965762,
+            0.42638160412739495
+          ],
+          "precision": 1.0,
+          "recall": 0.25,
+          "fpr_benign": 0.0,
+          "best_feature": 297
+        },
+        "diff_sae_4x": {
+          "bis": 0.4000000059604645,
+          "ci": [
+            0.37414954852277943,
+            0.42603442488707655
+          ],
+          "precision": 1.0,
+          "recall": 0.25,
+          "fpr_benign": 0.0,
+          "best_feature": 187
+        }
+      }
+    },
+    "26": {
+      "training": {
+        "crosscoder": {
+          "tokens_to_convergence": 250000,
+          "final_loss": 1.3717654943466187,
+          "dead_features": 0
+        },
+        "diff_sae_32x": {
+          "tokens_to_convergence": 250000,
+          "final_loss": 0.007810872979462147,
+          "dead_features": 0,
+          "converged": false
+        },
+        "diff_sae_4x": {
+          "tokens_to_convergence": 250000,
+          "final_loss": 0.011799581348896027,
+          "dead_features": 0,
+          "converged": false
+        },
+        "efficiency": {
+          "crosscoder_vs_diff_sae_32x": 0.9999999999999599,
+          "crosscoder_vs_diff_sae_4x": 0.9999999999999599
+        }
+      },
+      "evaluation": {
+        "crosscoder": {
+          "bis": 0.2348192036151886,
+          "ci": [
+            0.20011134165522154,
+            0.27162967687631034
+          ],
+          "precision": 0.6159999966621399,
+          "recall": 0.15399999916553497,
+          "fpr_benign": 0.04699999839067459,
+          "best_feature": 10206
+        },
+        "diff_sae_32x": {
+          "bis": 0.4000000059604645,
+          "ci": [
+            0.376712537739179,
+            0.4223970050335518
+          ],
+          "precision": 1.0,
+          "recall": 0.25,
+          "fpr_benign": 0.0,
+          "best_feature": 676
+        },
+        "diff_sae_4x": {
+          "bis": 0.4000000059604645,
+          "ci": [
+            0.3767757651619821,
+            0.42348151455109334
+          ],
+          "precision": 1.0,
+          "recall": 0.25,
+          "fpr_benign": 0.0,
+          "best_feature": 3294
+        }
+      }
+    }
+  }
+}
