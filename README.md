@@ -1,7 +1,8 @@
-# Crosscoder vs Diff-SAE: Comparative Feature Isolation
+# Diff-SAE vs Crosscoder: Backdoor Detection via Activation Differences
 
 **Full implementation of the paper:**
-*"Comparative Feature Isolation in Incremental Fine-Tuning: Crosscoders vs. Difference-SAEs in SmolLM2-360M"*
+*"Activation Differences Reveal Backdoors: A Comparison of SAE Architectures"*
+Accepted at IJCNN 2026 Main track
 
 ## Overview
 
