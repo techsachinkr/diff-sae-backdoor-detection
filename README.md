@@ -4,6 +4,8 @@
 *"Activation Differences Reveal Backdoors: A Comparison of SAE Architectures"*
 Accepted at IJCNN 2026 Main track
 
+**Preprint:** [arxiv.org/abs/2605.07324](https://arxiv.org/abs/2605.07324)
+
 ## Overview
 
 This codebase implements the complete experimental pipeline for comparing two approaches to differential mechanistic interpretability on a backdoored language model:
@@ -130,3 +132,17 @@ Each run writes to its `output_dir`:
 ## Reproducibility
 
 All randomness is seeded via `ExperimentConfig.seed = 42`. The ablation sweep over layers `[14, 18, 22, 26]` and both regimes is deterministic given fixed seeds and identical hardware.
+
+## Citation
+
+```bibtex
+@misc{kumar2026activationdifferencesrevealbackdoors,
+      title={Activation Differences Reveal Backdoors: A Comparison of SAE Architectures}, 
+      author={Sachin Kumar},
+      year={2026},
+      eprint={2605.07324},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2605.07324}, 
+}
+```
